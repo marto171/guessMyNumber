@@ -55,7 +55,7 @@
             this.btnAgain.TabIndex = 0;
             this.btnAgain.Text = "Отначало!";
             this.btnAgain.UseVisualStyleBackColor = true;
-            this.btnAgain.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgain.Click += new System.EventHandler(this.btnAgain_Click);
             // 
             // label1
             // 
@@ -88,17 +88,16 @@
             // 
             // lblStatus
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(494, 272);
+            this.lblStatus.Location = new System.Drawing.Point(472, 254);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(160, 20);
+            this.lblStatus.Size = new System.Drawing.Size(197, 58);
             this.lblStatus.TabIndex = 5;
             this.lblStatus.Text = "Започнете играта...";
             // 
             // lblPoint
             // 
             this.lblPoint.AutoSize = true;
-            this.lblPoint.Location = new System.Drawing.Point(494, 338);
+            this.lblPoint.Location = new System.Drawing.Point(472, 345);
             this.lblPoint.Name = "lblPoint";
             this.lblPoint.Size = new System.Drawing.Size(57, 20);
             this.lblPoint.TabIndex = 6;
@@ -107,7 +106,7 @@
             // lblMaxPoint
             // 
             this.lblMaxPoint.AutoSize = true;
-            this.lblMaxPoint.Location = new System.Drawing.Point(494, 371);
+            this.lblMaxPoint.Location = new System.Drawing.Point(472, 378);
             this.lblMaxPoint.Name = "lblMaxPoint";
             this.lblMaxPoint.Size = new System.Drawing.Size(103, 20);
             this.lblMaxPoint.TabIndex = 7;
@@ -115,17 +114,19 @@
             // 
             // lblCurResult
             // 
-            this.lblCurResult.Location = new System.Drawing.Point(557, 338);
+            this.lblCurResult.Location = new System.Drawing.Point(535, 345);
             this.lblCurResult.Name = "lblCurResult";
             this.lblCurResult.Size = new System.Drawing.Size(88, 20);
             this.lblCurResult.TabIndex = 8;
+            this.lblCurResult.Text = "20";
             // 
             // lblMaxResult
             // 
-            this.lblMaxResult.Location = new System.Drawing.Point(603, 371);
+            this.lblMaxResult.Location = new System.Drawing.Point(581, 378);
             this.lblMaxResult.Name = "lblMaxResult";
             this.lblMaxResult.Size = new System.Drawing.Size(51, 20);
             this.lblMaxResult.TabIndex = 9;
+            this.lblMaxResult.Text = "0";
             // 
             // label3
             // 
@@ -156,7 +157,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(494, 305);
+            this.label4.Location = new System.Drawing.Point(472, 312);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 20);
             this.label4.TabIndex = 13;
@@ -164,9 +165,9 @@
             // 
             // lblNumber
             // 
-            this.lblNumber.Location = new System.Drawing.Point(666, 305);
+            this.lblNumber.Location = new System.Drawing.Point(644, 312);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(25, 20);
+            this.lblNumber.Size = new System.Drawing.Size(30, 20);
             this.lblNumber.TabIndex = 14;
             this.lblNumber.Text = "?";
             // 
@@ -174,7 +175,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 441);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(713, 441);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCheck);
@@ -194,7 +196,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Познай числото";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureQuestMark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
